@@ -112,9 +112,6 @@ public class WebSteps {
     }
 
     private boolean isTimeToThrowException() {
-        return new Random().nextBoolean()
-                && new Random().nextBoolean()
-                && new Random().nextBoolean()
-                && new Random().nextBoolean();
+        return true;
     }
 }
