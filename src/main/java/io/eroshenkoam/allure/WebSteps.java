@@ -89,20 +89,9 @@ public class WebSteps {
     }
 
     private void maybeThrowSeleniumTimeoutException() {
-        if (isTimeToThrowException()) {
-            throw new RuntimeException("Selenium timeout: selenium unavailable now");
-        }
     }
 
     private void maybeThrowElementNotFoundException() {
-        try {
-            Thread.sleep(1000);
-            if (isTimeToThrowException()) {
-                throw new RuntimeException("Element not found for xpath [//div[@class='something']]");
-            }
-        } catch (InterruptedException e) {
-            //do nothing, it's dummy test
-        }
     }
 
     private void maybeThrowAssertionException(String text) {
