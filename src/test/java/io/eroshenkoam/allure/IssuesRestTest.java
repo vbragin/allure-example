@@ -21,6 +21,7 @@ public class IssuesRestTest {
 
     private final RestSteps steps = new RestSteps();
 
+    @TM4J("AE-T6")
     @Story("Create new issue")
     @Tags({@Tag("api"), @Tag("smoke")})
     @ParameterizedTest(name = "Create issue via api")
@@ -34,6 +35,7 @@ public class IssuesRestTest {
         steps.shouldSeeIssueWithTitle(OWNER, REPO, title);
     }
 
+    @TM4J("AE-T7")
     @Story("Close existing issue")
     @Tags({@Tag("web"), @Tag("regress")})
     @JiraIssues({@JiraIssue("AE-1")})
