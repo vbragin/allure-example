@@ -32,6 +32,7 @@ public class IssuesWebTest {
     }
 
     @Test
+    @TM4J("AE-T1")
     @Story("Create new issue")
     @JiraIssues({@JiraIssue("AE-2")})
     @Tags({@Tag("web"), @Tag("critical")})
@@ -43,6 +44,7 @@ public class IssuesWebTest {
     }
 
     @Test
+    @TM4J("AE-T2")
     @Story("Create new issue")
     @Tags({@Tag("web"), @Tag("regress")})
     @JiraIssues({@JiraIssue("AE-1")})
@@ -54,6 +56,7 @@ public class IssuesWebTest {
     }
 
     @Test
+    @TM4J("AE-T3")
     @Story("Close existing issue")
     @Tags({@Tag("web"), @Tag("regress")})
     @JiraIssues({@JiraIssue("AE-1")})

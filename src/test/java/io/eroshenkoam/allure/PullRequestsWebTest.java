@@ -32,6 +32,7 @@ public class PullRequestsWebTest {
     }
 
     @Test
+    @TM4J("AE-T4")
     @Story("Create new pull request")
     @Tags({@Tag("web"), @Tag("regress"), @Tag("smoke")})
     @JiraIssues({@JiraIssue("AE-1"), @JiraIssue("AE-2")})
@@ -43,6 +44,7 @@ public class PullRequestsWebTest {
     }
 
     @Test
+    @TM4J("AE-T5")
     @JiraIssue("AE-2")
     @Story("Close existing pull request")
     @Tags({@Tag("web"), @Tag("regress")})
