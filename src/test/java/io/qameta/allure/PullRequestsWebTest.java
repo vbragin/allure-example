@@ -28,7 +28,7 @@ public class PullRequestsWebTest {
     }
 
     @Test
-    @TM4J("AE-T6")
+    @Xray("XRAY-6")
     @Microservice("Billing")
     @Story("Create new pull request")
     @Tags({@Tag("web"), @Tag("regress"), @Tag("smoke")})
@@ -41,7 +41,7 @@ public class PullRequestsWebTest {
     }
 
     @Test
-    @TM4J("AE-T7")
+    @Xray("XRAY-7")
     @JiraIssue("AE-2")
     @Microservice("Repository")
     @Story("Close existing pull request")
