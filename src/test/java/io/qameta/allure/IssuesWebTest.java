@@ -28,7 +28,7 @@ public class IssuesWebTest {
     }
 
     @Test
-    @TM4J("AE-T3")
+    @TM4J("TI-T3")
     @Microservice("Billing")
     @Story("Create new issue")
     @JiraIssues({@JiraIssue("AE-2")})
@@ -41,7 +41,7 @@ public class IssuesWebTest {
     }
 
     @Test
-    @TM4J("AE-T4")
+    @TM4J("TI-T4")
     @Microservice("Repository")
     @Story("Create new issue")
     @Tags({@Tag("web"), @Tag("regress")})
@@ -54,7 +54,7 @@ public class IssuesWebTest {
     }
 
     @Test
-    @TM4J("AE-T5")
+    @TM4J("TI-T5")
     @Microservice("Repository")
     @Story("Close existing issue")
     @Tags({@Tag("web"), @Tag("regress")})

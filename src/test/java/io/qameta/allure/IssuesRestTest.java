@@ -17,7 +17,7 @@ public class IssuesRestTest {
 
     private final RestSteps steps = new RestSteps();
 
-    @TM4J("AE-T1")
+    @TM4J("TI-T1")
     @Story("Create new issue")
     @Microservice("Billing")
     @Tags({@Tag("api"), @Tag("smoke")})
@@ -32,7 +32,7 @@ public class IssuesRestTest {
         steps.shouldSeeIssueWithTitle(OWNER, REPO, title);
     }
 
-    @TM4J("AE-T2")
+    @TM4J("TI-T2")
     @Story("Close existing issue")
     @Microservice("Repository")
     @Tags({@Tag("web"), @Tag("regress")})
